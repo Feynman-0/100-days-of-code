@@ -1,0 +1,57 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#page-background {
+  background-image: url('https://wallpaperaccess.com/full/1249336.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#jokes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#jokes-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#random-joke {
+  position: relative;
+}
+
+#random-joke:before,
+#random-joke:after {
+  content: '"';
+  position: absolute;
+  font-size: 40px;
+}
+
+#random-joke:before {
+  top: -20px;
+  left: -10px;
+}
+
+#random-joke:after {
+  bottom: -20px;
+  right: -10px;
+}
